@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css"/>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+</script>
   </head>
   <body style="padding-top:60px">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -23,7 +37,7 @@
     </div>
     <div class="container">
       <div class="column">
-      <button type="button" class="btn btn-primary">Fuck Bitches, Get Money</button>
+      <a href="https://dl.dropboxusercontent.com/s/esugo6pxjprv4xw/Dustin%20Drvodeli1.docx?dl=1&token_hash=AAGozSyVdjXD2prKDpCF0_zbe3qRNrQTvzKzjIwPgRhX8g" class="btn btn-primary btn-lg active" onclick="fade(this)" role="button">Research Paper</a>
       </div>
     </div>
   </body>
